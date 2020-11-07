@@ -3,19 +3,23 @@ Automate Creation and Uploading of CyberPanel Backups to Mega using mega-tools
 
 1) Clone this repo in /root directory of the server with directory name mega-backup using following Command
  
- > git clone https://github.com/wildangunawan/mega-backup-cyberpanel.git mega-backup
+ ```
+ git clone https://github.com/wildangunawan/mega-backup-cyberpanel.git mega-backup
+ ```
  
  or you can use wget to download Zip Archive and Extract.
  
- > wget 'https://github.com/wildangunawan/mega-backup-cyberpanel/archive/cyberpanel-mega.zip'
-
- > unzip -j cyberpanel-mega.zip -d mega-backup
+ ```
+ wget 'https://github.com/wildangunawan/mega-backup-cyberpanel/archive/cyberpanel-mega.zip'
+ unzip -j cyberpanel-mega.zip -d mega-backup
+ ```
 
 2) Run setup.sh with Server Hostname, Host Node, Cron Job Time as arguments
 
- > cd mega-backup
-
- > source setup.sh "server.hostname.com" "swift" "30 5 * * *"
+ ```
+ cd mega-backup
+ source setup.sh "server.hostname.com" "swift" "30 5 * * *"
+ ```
 
    server.hostname.com = Server's Hostname where Backup Script will run or Primary Domain Name
    
@@ -24,11 +28,15 @@ Automate Creation and Uploading of CyberPanel Backups to Mega using mega-tools
    30 5 * * * = Backup Upload Script will run daily @5:30 AM
 
    Example: 
- > source setup.sh "swift.basezap.com" "swift" "30 5 * * *"
+   ```
+   source setup.sh "swift.basezap.com" "swift" "30 5 * * *"
+   ```
 
 3) Create .megarc file
  
- > nano .megarc
+ ```
+ nano .megarc
+ ```
 
 Copy and paste following text and change it to yours
 
