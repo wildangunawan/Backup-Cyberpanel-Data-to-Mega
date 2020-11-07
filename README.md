@@ -33,7 +33,9 @@ Automate Creation and Uploading of CyberPanel Backups to Mega using mega-tools
 Copy and paste following text and change it to yours
 
 > [Login]
+
 > Username=your-mega-email-address
+
 > Password=your-mega-password
 
 ## Acknowledgment
