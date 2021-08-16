@@ -5,8 +5,8 @@ SERVER_HOSTNAME=
 NODE=
 
 # old backup
-DATEFORM=$(date +"%D %T")
-OLD_BACKUP_DATE=$(date +"%D %T" -d "7 days ago")
+DATEFORM="$(date +%Y-%m-%d)"
+OLD_BACKUP_DATE=$(date +"%Y-%m-%d" -d "7 days ago")
 
 # create folder
 megamkdir "/Root/"$SERVER_HOSTNAME
